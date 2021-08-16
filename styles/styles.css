@@ -97,7 +97,7 @@ header .header-wrapper .header-derecha .links a {
   height: 40px;
   text-decoration: none;
   color: #702c2e;
-  margin: 0 1.5em;
+  margin: 0 10px;
   font-weight: 500;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -194,6 +194,10 @@ header .header-wrapper .header-derecha .redes a {
   color: #702c2e;
   border-radius: 2em;
   text-decoration: none;
+}
+
+header .header-wrapper .header-derecha .redes a:hover {
+  background-color: red;
 }
 
 .landing-wrapper {
