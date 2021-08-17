@@ -164,6 +164,12 @@ header .header-wrapper .header-derecha .boton-contacto a {
   border-radius: 2em;
   color: white;
   text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .header-wrapper .header-derecha .boton-contacto a:hover {
+  background-color: #ee6f4a;
 }
 
 header .header-wrapper .header-derecha .redes {
@@ -180,7 +186,7 @@ header .header-wrapper .header-derecha .redes {
 }
 
 header .header-wrapper .header-derecha .redes a {
-  margin: 0 5px;
+  margin: 0 10px;
   font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,10 +200,13 @@ header .header-wrapper .header-derecha .redes a {
   color: #702c2e;
   border-radius: 2em;
   text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 header .header-wrapper .header-derecha .redes a:hover {
-  background-color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .landing-wrapper {

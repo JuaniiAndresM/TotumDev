@@ -121,6 +121,11 @@ header {
           border-radius: 2em;
           color: white;
           text-decoration: none;
+
+          transition: .5s;
+        }
+        a:hover{
+          background-color: $color3;
         }
       }
       .redes {
@@ -130,7 +135,7 @@ header {
         align-items: center;
 
         a {
-          margin: 0 5px;
+          margin: 0 10px;
           font-size: 2em;
           display: flex;
           justify-content: center;
@@ -139,9 +144,10 @@ header {
           color: $color4;
           border-radius: 2em;
           text-decoration: none;
+          transition: .5s;
         }
         a:hover{
-          background-color: red;
+          transform: scale(1.2);
         }
       }
     }
@@ -213,6 +219,8 @@ header {
     position: absolute;
     bottom: 0;
     overflow: hidden;
+
+
     .mont1,
     .mont2,
     .mont3 {
