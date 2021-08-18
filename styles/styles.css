@@ -350,14 +350,14 @@ header .header-wrapper .header-derecha .redes a:hover {
 .section1 .section-content h1 {
   color: #f7ac6a;
   font-size: 3em;
-  margin-left: 10px;
+  margin: 0 35px;
   font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
 }
 
 .section1 .section-content hr {
   position: relative;
   border: 1px solid #f7ac6a;
-  margin: 10px;
+  margin: 10px 30px;
   z-index: 10;
 }
 
@@ -380,8 +380,6 @@ header .header-wrapper .header-derecha .redes a:hover {
   overflow: hidden;
   position: relative;
   background-color: #531c1f;
-  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
   min-width: 400px;
   width: 30%;
   height: 400px;
@@ -446,6 +444,7 @@ header .header-wrapper .header-derecha .redes a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -464,6 +463,53 @@ header .header-wrapper .header-derecha .redes a:hover {
           transform: translateY(300%);
   -webkit-animation: button-hover-card-reverse 0.5s linear forwards;
           animation: button-hover-card-reverse 0.5s linear forwards;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section1 .section-content .servicios-wrapper .card a span {
+  position: absolute;
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  width: 140px;
+  height: 45px;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 0;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover:after,
+.section1 .section-content .servicios-wrapper .card a:hover::before {
+  -webkit-animation: links-header 0.2s linear forwards;
+          animation: links-header 0.2s linear forwards;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover span {
+  -webkit-animation: links-header2 0.2s forwards;
+          animation: links-header2 0.2s forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  z-index: -1;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover {
+  color: white;
 }
 
 .section1 .section-content .servicios-wrapper .card:hover a {

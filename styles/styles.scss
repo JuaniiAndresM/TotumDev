@@ -274,14 +274,14 @@ header {
     h1{
       color: $color2;
       font-size: 3em;
-      margin-left: 10px;
+      margin: 0 35px;
       font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
     }
 
     hr{
       position: relative;
       border: 1px solid $color2;
-      margin: 10px;
+      margin: 10px 30px;
       z-index: 10;
     }
 
@@ -296,7 +296,7 @@ header {
         overflow: hidden;
         position: relative;
         background-color: #531c1f;
-        box-shadow: 5px 5px 10px 0 rgba($color: #000000, $alpha: .5);
+        //box-shadow: 5px 5px 10px 0 rgba($color: #000000, $alpha: .5);
 
         min-width: 400px;
         width: 30%;
@@ -340,6 +340,7 @@ header {
           position: absolute;
           bottom: 20px;
           display: flex;
+          overflow: hidden;
 
           justify-content: center;
           align-items: center;
@@ -357,6 +358,43 @@ header {
           transform: translateY(300%);
 
           animation: button-hover-card-reverse 0.5s linear forwards;
+          transition: 0.5s;
+        }
+        a span {
+          position: absolute;
+          transform: translateY(300%);
+          width: 140px;
+          height: 45px;
+          background: #972b2e;
+        }
+
+        a:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 2px;
+          height: 0;
+          background: #972b2e;
+        }
+        a:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 2px;
+          height: 0;
+          background: #972b2e;
+        }
+        a:hover:after,
+        a:hover::before {
+          animation: links-header 0.2s linear forwards;
+        }
+        a:hover span {
+          animation: links-header2 0.2s forwards;
+          animation-delay: 0.3s;
+          z-index: -1;
+        }
+        a:hover{
+            color: white;
         }
       }
       .card:hover a{
