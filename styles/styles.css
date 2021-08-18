@@ -1,9 +1,15 @@
+@font-face {
+  font-family: BerlinSans;
+  src: url("../fonts/BerlinSans.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", "sans-serif";
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -254,10 +260,11 @@ header .header-wrapper .header-derecha .redes a:hover {
 .landing-wrapper .texto h1 {
   font-size: 5em;
   font-weight: bold;
+  font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
 }
 
 .landing-wrapper .texto p {
-  font-size: 1.8em;
+  font-size: 1.6em;
   letter-spacing: 5px;
 }
 
@@ -292,6 +299,7 @@ header .header-wrapper .header-derecha .redes a:hover {
   position: absolute;
   bottom: 0;
   overflow: hidden;
+  margin-bottom: -5px;
 }
 
 .landing-wrapper .landing-img-wrapper .mont1,
@@ -304,6 +312,7 @@ header .header-wrapper .header-derecha .redes a:hover {
   height: 100%;
   z-index: 10;
   overflow-x: hidden;
+  pointer-events: none;
   -webkit-animation: mont 0.8s linear forwards;
           animation: mont 0.8s linear forwards;
 }
@@ -333,13 +342,187 @@ header .header-wrapper .header-derecha .redes a:hover {
   margin-bottom: -5px;
 }
 
-.section1 .ilustracion1 {
-  width: 500px;
+.section1 .section-content {
+  padding: 40px 10px;
+  background: #42191b;
 }
 
-.seccion2 {
-  height: 100vh;
-  background: #42191b;
+.section1 .section-content h1 {
+  color: #f7ac6a;
+  font-size: 3em;
+  margin: 0 35px;
+  font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+}
+
+.section1 .section-content hr {
+  position: relative;
+  border: 1px solid #f7ac6a;
+  margin: 10px 30px;
+  z-index: 10;
+}
+
+.section1 .section-content .servicios-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section1 .section-content .servicios-wrapper .card {
+  overflow: hidden;
+  position: relative;
+  background-color: #531c1f;
+  min-width: 400px;
+  width: 30%;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.section1 .section-content .servicios-wrapper .card .card-content {
+  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section1 .section-content .servicios-wrapper .card .card-content i {
+  color: #f7ddb6;
+  font-size: 5em;
+}
+
+.section1 .section-content .servicios-wrapper .card .card-content h2 {
+  margin: 10px 0;
+  color: #f7ac6a;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section1 .section-content .servicios-wrapper .card .card-content p {
+  color: #f7ac6a;
+  text-align: center;
+}
+
+.section1 .section-content .servicios-wrapper .card a {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7ac6a;
+  color: #702c2e;
+  width: 140px;
+  height: 45px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 20px 0;
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  -webkit-animation: button-hover-card-reverse 0.5s linear forwards;
+          animation: button-hover-card-reverse 0.5s linear forwards;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section1 .section-content .servicios-wrapper .card a span {
+  position: absolute;
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  width: 140px;
+  height: 45px;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 0;
+  background: #972b2e;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover:after,
+.section1 .section-content .servicios-wrapper .card a:hover::before {
+  -webkit-animation: links-header 0.2s linear forwards;
+          animation: links-header 0.2s linear forwards;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover span {
+  -webkit-animation: links-header2 0.2s forwards;
+          animation: links-header2 0.2s forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  z-index: -1;
+}
+
+.section1 .section-content .servicios-wrapper .card a:hover {
+  color: white;
+}
+
+.section1 .section-content .servicios-wrapper .card:hover a {
+  -webkit-animation: button-hover-card 0.5s linear forwards;
+          animation: button-hover-card 0.5s linear forwards;
+}
+
+.section1 .section-content .servicios-wrapper .card:hover .card-content {
+  margin-top: -60px;
+}
+
+.section1 .section-content .servicios-wrapper .card:hover {
+  background-color: #5e1d21;
 }
 
 /*-------------------------------------
@@ -447,6 +630,50 @@ header .header-wrapper .header-derecha .redes a:hover {
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes button-hover-card {
+  0% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes button-hover-card {
+  0% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes button-hover-card-reverse {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+}
+
+@keyframes button-hover-card-reverse {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
   }
 }
 

@@ -3,12 +3,21 @@ $color2: #f7ac6a;
 $color3: #ee6f4a;
 $color4: #702c2e;
 $color5: #83967a;
+$color6: #42191B;
+
+@font-face {
+  font-family: BerlinSans;
+  src: url('../fonts/BerlinSans.ttf');
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", "sans-serif";
+  scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -188,9 +197,10 @@ header {
     h1 {
       font-size: 5em;
       font-weight: bold;
+      font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
     }
     p {
-      font-size: 1.8em;
+      font-size: 1.6em;
       letter-spacing: 5px;
     }
     a {
@@ -220,6 +230,8 @@ header {
     bottom: 0;
     overflow: hidden;
 
+    margin-bottom: -5px;
+
 
     .mont1,
     .mont2,
@@ -230,6 +242,7 @@ header {
       height: 100%;
       z-index: 10;
       overflow-x: hidden;
+      pointer-events: none;
 
       animation: mont 0.8s linear forwards;
     }
@@ -254,16 +267,147 @@ header {
     margin-bottom: -5px;
   }
 
-  .ilustracion1{
-    width: 500px;
+  .section-content{
+    padding: 40px 10px;
+    background: #42191b;
+
+    h1{
+      color: $color2;
+      font-size: 3em;
+      margin: 0 35px;
+      font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+    }
+
+    hr{
+      position: relative;
+      border: 1px solid $color2;
+      margin: 10px 30px;
+      z-index: 10;
+    }
+
+    .servicios-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .card{
+        overflow: hidden;
+        position: relative;
+        background-color: #531c1f;
+        //box-shadow: 5px 5px 10px 0 rgba($color: #000000, $alpha: .5);
+
+        min-width: 400px;
+        width: 30%;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: .3s;
+        .card-content{
+          margin: 0 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          transition: 0.5s;
+
+          i{
+            color: $color1;
+            font-size: 5em;
+          }
+          h2{
+            margin: 10px 0;
+            color: $color2;
+            font-size: 30px;
+            text-align: center;
+          }
+          p{
+            color: $color2;
+            text-align: center;
+          }
+
+
+        }
+
+        a{
+          position: absolute;
+          bottom: 20px;
+          display: flex;
+          overflow: hidden;
+
+          justify-content: center;
+          align-items: center;
+
+          background-color: $color2;
+          color: $color4;
+
+          width: 140px;
+          height: 45px;
+          text-decoration: none;
+          font-weight: 600;
+          border-radius: 5px;
+          margin: 20px 0;
+
+          transform: translateY(300%);
+
+          animation: button-hover-card-reverse 0.5s linear forwards;
+          transition: 0.5s;
+        }
+        a span {
+          position: absolute;
+          transform: translateY(300%);
+          width: 140px;
+          height: 45px;
+          background: #972b2e;
+        }
+
+        a:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 2px;
+          height: 0;
+          background: #972b2e;
+        }
+        a:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 2px;
+          height: 0;
+          background: #972b2e;
+        }
+        a:hover:after,
+        a:hover::before {
+          animation: links-header 0.2s linear forwards;
+        }
+        a:hover span {
+          animation: links-header2 0.2s forwards;
+          animation-delay: 0.3s;
+          z-index: -1;
+        }
+        a:hover{
+            color: white;
+        }
+      }
+      .card:hover a{
+        animation: button-hover-card 0.5s linear forwards;
+      }
+      .card:hover .card-content{
+        margin-top: -60px;
+      }
+      .card:hover{
+        background-color: #5e1d21;
+      }
+    }
   }
-}
-
-.seccion2{
-  height: 100vh;
-  background: #42191b;
-
-  
 }
 
 /*-------------------------------------
@@ -312,6 +456,23 @@ header {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes button-hover-card{
+  0%{
+    transform: translateY(300%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes button-hover-card-reverse{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(300%);
   }
 }
 
