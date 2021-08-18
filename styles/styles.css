@@ -329,6 +329,19 @@ header .header-wrapper .header-derecha .redes a:hover {
   background-color: #702c2e;
 }
 
+.section1 .section-piedras {
+  margin-bottom: -5px;
+}
+
+.section1 .ilustracion1 {
+  width: 500px;
+}
+
+.seccion2 {
+  height: 100vh;
+  background: #42191b;
+}
+
 /*-------------------------------------
 
             Animaciones
