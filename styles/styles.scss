@@ -1,0 +1,456 @@
+$color1: #f7ddb6;
+$color2: #f7ac6a;
+$color3: #ee6f4a;
+$color4: #702c2e;
+$color5: #83967a;
+$color6: #42191B;
+
+@font-face {
+  font-family: BerlinSans;
+  src: url('../fonts/BerlinSans.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "sans-serif";
+  scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: $color1;
+}
+::-webkit-scrollbar-thumb {
+  background: $color5;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 40;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: landing-text 0.3s linear forwards;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    .logo {
+      margin: 10px;
+      img {
+        width: 80px;
+      }
+    }
+    .header-derecha {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          overflow: hidden;
+
+          position: relative;
+
+          width: 120px;
+          height: 40px;
+          text-decoration: none;
+          color: $color4;
+          margin: 0 10px;
+          font-weight: 500;
+
+          transition: 0.8s;
+        }
+        a span {
+          position: absolute;
+          transform: translateY(-100%);
+          width: 120px;
+          height: 40px;
+          background: $color4;
+        }
+
+        a:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 2px;
+          height: 0;
+          background: $color4;
+        }
+        a:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 2px;
+          height: 0;
+          background: $color4;
+        }
+        a:hover:after,
+        a:hover::before {
+          animation: links-header 0.2s linear forwards;
+        }
+        a:hover span {
+          animation: links-header2 0.2s forwards;
+          animation-delay: 0.3s;
+          z-index: -1;
+        }
+        a:hover{
+            color: white;
+        }
+      }
+      .boton-contacto {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: $color4;
+          width: 120px;
+          height: 40px;
+          border-radius: 2em;
+          color: white;
+          text-decoration: none;
+
+          transition: .5s;
+        }
+        a:hover{
+          background-color: $color3;
+        }
+      }
+      .redes {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          margin: 0 10px;
+          font-size: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: $color4;
+          border-radius: 2em;
+          text-decoration: none;
+          transition: .5s;
+        }
+        a:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.landing-wrapper {
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  margin: 0 auto;
+
+  background-color: $color1;
+
+  .texto {
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 10px;
+
+    top: 30%;
+
+    z-index: 25;
+
+    animation: landing-text 0.5s linear forwards;
+
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+    }
+    p {
+      font-size: 1.6em;
+      letter-spacing: 5px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      text-decoration: none;
+      background-color: #222222;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      width: 150px;
+      height: 40px;
+      color: white;
+
+      font-size: 15px;
+    }
+  }
+
+  .landing-img-wrapper {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+    margin-bottom: -5px;
+
+
+    .mont1,
+    .mont2,
+    .mont3 {
+      transform: translateY(-100%);
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      z-index: 10;
+      overflow-x: hidden;
+      pointer-events: none;
+
+      animation: mont 0.8s linear forwards;
+    }
+    .mont2 {
+      z-index: 20;
+      animation-delay: 0.2s;
+    }
+    .mont3 {
+      z-index: 30;
+      animation-delay: 0.5s;
+      animation-duration: 0.6s;
+    }
+  }
+}
+.section1 {
+  position: relative;
+  height: 100vh;
+  z-index: 30;
+  background-color: $color4;
+
+  .section-piedras{
+    margin-bottom: -5px;
+  }
+
+  .section-content{
+    padding: 40px 10px;
+    background: #42191b;
+
+    h1{
+      color: $color2;
+      font-size: 3em;
+      margin-left: 10px;
+      font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+    }
+
+    hr{
+      position: relative;
+      border: 1px solid $color2;
+      margin: 10px;
+      z-index: 10;
+    }
+
+    .servicios-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .card{
+        overflow: hidden;
+        position: relative;
+        background-color: #531c1f;
+        box-shadow: 5px 5px 10px 0 rgba($color: #000000, $alpha: .5);
+
+        min-width: 400px;
+        width: 30%;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: .3s;
+        .card-content{
+          margin: 0 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          transition: 0.5s;
+
+          i{
+            color: $color1;
+            font-size: 5em;
+          }
+          h2{
+            margin: 10px 0;
+            color: $color2;
+            font-size: 30px;
+            text-align: center;
+          }
+          p{
+            color: $color2;
+            text-align: center;
+          }
+
+
+        }
+
+        a{
+          position: absolute;
+          bottom: 20px;
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+
+          background-color: $color2;
+          color: $color4;
+
+          width: 140px;
+          height: 45px;
+          text-decoration: none;
+          font-weight: 600;
+          border-radius: 5px;
+          margin: 20px 0;
+
+          transform: translateY(300%);
+
+          animation: button-hover-card-reverse 0.5s linear forwards;
+        }
+      }
+      .card:hover a{
+        animation: button-hover-card 0.5s linear forwards;
+      }
+      .card:hover .card-content{
+        margin-top: -60px;
+      }
+      .card:hover{
+        background-color: #5e1d21;
+      }
+    }
+  }
+}
+
+/*-------------------------------------
+
+            Animaciones
+
+-------------------------------------*/
+@keyframes mont {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes landing-text {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes links-header {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes links-header2 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes button-hover-card{
+  0%{
+    transform: translateY(300%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes button-hover-card-reverse{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(300%);
+  }
+}
+
+/*-------------------------------------
+
+            Responsive
+
+-------------------------------------*/
+
+@media screen and(max-width: 900px) {
+  .landing-img-wrapper::after {
+    content: "";
+    margin-right: -50%;
+  }
+  .landing-img-wrapper::before {
+    content: "";
+    margin-left: -50%;
+  }
+}
