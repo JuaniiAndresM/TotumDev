@@ -525,6 +525,55 @@ header .header-wrapper .header-derecha .redes a:hover {
   background-color: #5e1d21;
 }
 
+.section1 .sobre-nosotros {
+  background-color: #42191b;
+}
+
+.section1 .sobre-nosotros .section-piedras2 {
+  width: 100%;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+.section1 .sobre-nosotros .nosotros {
+  background-color: #531C1F;
+  text-align: center;
+}
+
+.section1 .sobre-nosotros .nosotros h1 {
+  font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+  font-size: 40px;
+  color: #f7ac6a;
+}
+
+.section1 .sobre-nosotros .nosotros a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  color: #702c2e;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #f7ac6a;
+}
+
+.section1 .sobre-nosotros .section-piedras2-reverse {
+  height: 100px;
+  width: 100%;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+}
+
 /*-------------------------------------
 
             Animaciones
@@ -682,6 +731,17 @@ header .header-wrapper .header-derecha .redes a:hover {
             Responsive
 
 -------------------------------------*/
+@media screen and (max-width: 1030px) {
+  header .header-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header-wrapper .header-derecha {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .landing-img-wrapper::after {
     content: "";
@@ -690,6 +750,45 @@ header .header-wrapper .header-derecha .redes a:hover {
   .landing-img-wrapper::before {
     content: "";
     margin-left: -50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section1 .section-content .servicios-wrapper .card {
+    height: auto;
+  }
+  .section1 .section-content .servicios-wrapper .card .card-content {
+    margin: 30px 40px;
+  }
+  .section1 .section-content .servicios-wrapper .card a {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-animation: none;
+            animation: none;
+    position: inherit;
+  }
+  .section1 .section-content .servicios-wrapper .card:hover a {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section1 .section-content .servicios-wrapper .card:hover .card-content {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing-wrapper .texto h1 {
+    font-size: 3em;
+  }
+  .landing-wrapper .texto p {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section1 .section-content .servicios-wrapper .card {
+    min-width: 320px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
