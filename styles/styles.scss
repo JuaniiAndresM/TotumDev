@@ -437,9 +437,8 @@ header {
 
       position: absolute;
       z-index: -1;
-      width: fit-content;
       width: 100%;
-      height: fit-content;
+      height: auto;
       overflow: hidden;
 
       img{
