@@ -638,6 +638,7 @@ header .header-wrapper .header-derecha .redes a:hover {
   font-size: 50px;
   text-align: center;
   font-family: 'BerlinSans', 'Montserrat', 'sans-serif';
+  margin: 0 10px;
 }
 
 .section-nosotros hr {
