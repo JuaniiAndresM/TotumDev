@@ -13,23 +13,36 @@ $(window).resize(function () {
 function tamañoimagen(){
 
     let imagen = document.getElementById('img-index');
+    let imagen2 = document.getElementById('img-index2');
     let img_height = imagen.clientHeight;
     let img_width = imagen.clientWidth;
 
+    let img_height2 = imagen.clientHeight;
+    let img_width2 = imagen.clientWidth;
+
     let window_width = window.innerWidth;
 
-    if(img_height <= 400){
+    if(img_height <= 400 || img_height2 <= 400){
         imagen.style.height = '100%';
         imagen.style.width = 'auto';
 
-        if(window_width > img_width){
+        imagen2.style.height = '100%';
+        imagen2.style.width = 'auto';
+
+        if(window_width > img_width || window_width > img_width2){
             imagen.style = width = '100%';
             imagen.style.height = 'auto';
+
+            imagen2.style = width = '100%';
+            imagen2.style.height = 'auto';
         }
 
     }else{
         imagen.style.width = '100%';
         imagen.style.height = 'auto';
+
+        imagen2.style.width = '100%';
+        imagen2.style.height = 'auto';
     }
 }
 
