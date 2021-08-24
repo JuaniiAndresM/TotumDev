@@ -10,6 +10,10 @@
           box-sizing: border-box;
   font-family: "Montserrat", "sans-serif";
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -443,6 +447,11 @@ header .header-wrapper .header-derecha .redes a:hover {
 .section1 .section-content .servicios-wrapper .card .card-content p {
   color: #f7ac6a;
   text-align: center;
+}
+
+.section1 .section-content .servicios-wrapper .card .card-content p b {
+  color: #f7ddb6;
+  font-weight: normal;
 }
 
 .section1 .section-content .servicios-wrapper .card a {
