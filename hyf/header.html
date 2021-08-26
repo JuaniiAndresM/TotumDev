@@ -7,7 +7,7 @@
       <div class="links">
         <a href="/totumdev/index.html#servicios">Servicios <span></span></a>
         <a href="/totumdev/index.html#nosotros">Nosotros <span></span></a>
-        <a href="">Portfolio <span></span></a>
+        <a href="/totumdev/Portfolio/Portfolio.html">Portfolio <span></span></a>
         <a href="">Blog <span></span></a>
       </div>
       <div class="boton-contacto">
@@ -19,6 +19,34 @@
         ></a>
         <a href="tel:+59898117180"><i class="fab fa-whatsapp"></i></a>
       </div>
+
+      <div class="burger-mobile" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div id="links-mobile" style="transform: translateY(-120%);">
+        <div class="links-wrapper">
+          <img src="/totumdev/media/svg/LogoHorizontal.svg" alt="">
+          <a href="/totumdev/index.html#servicios"><i class="fas fa-file-alt"></i> Servicios <span></span></a>
+          <a href="/totumdev/index.html#nosotros"><i class="fas fa-user-friends"></i> Nosotros <span></span></a>
+          <a href="/totumdev/Portfolio/Portfolio.html"><i class="fas fa-folder-open"></i> Portfolio <span></span></a>
+          <a href=""><i class="fas fa-feather-alt"></i> Blog <span></span></a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
+
+<script>
+  function myFunction(x) {
+      x.classList.toggle("change");
+
+      if (document.getElementById("links-mobile").style.transform == "translateY(0%)") {
+          document.getElementById("links-mobile").style.transform = "translateY(-120%)";
+      } else {
+          document.getElementById("links-mobile").style.transform = "translateY(-0%)";
+      }
+  }
+</script>
