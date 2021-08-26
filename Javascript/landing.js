@@ -5,7 +5,7 @@ $(document).ready(function () {
     tamañoimagen();
 });
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+/*document.addEventListener('contextmenu', event => event.preventDefault());
  
 document.onkeydown = function (e) {
 
@@ -28,7 +28,7 @@ document.onkeydown = function (e) {
     if(e.ctrlKey && e.keyCode == 85) {
         return false;
     }
-}
+}*/
 
 $(window).resize(function () { 
     tamañoimagen();
@@ -42,30 +42,34 @@ function tamañoimagen(){
     let img_height = imagen.clientHeight;
     let img_width = imagen.clientWidth;
 
-    let img_height2 = imagen.clientHeight;
-    let img_width2 = imagen.clientWidth;
+    let img_height2 = imagen2.clientHeight;
+    let img_width2 = imagen2.clientWidth;
 
     let window_width = window.innerWidth;
 
-    if(img_height <= 400 || img_height2 <= 400){
+    if(window_width <= 400){
         imagen.style.height = '100%';
         imagen.style.width = 'auto';
 
-        imagen2.style.height = '100%';
-        imagen2.style.width = 'auto';
-
-        if(window_width > img_width || window_width > img_width2){
+        if(window_width > img_width){
             imagen.style = width = '100%';
             imagen.style.height = 'auto';
-
-            imagen2.style = width = '100%';
-            imagen2.style.height = 'auto';
         }
 
     }else{
         imagen.style.width = '100%';
         imagen.style.height = 'auto';
+    }
 
+    if(window_width <= 400){
+        imagen2.style.height = '100%';
+        imagen2.style.width = 'auto';
+
+        if(window_width > img_width2){
+            imagen2.style = width = '100%';
+            imagen2.style.height = 'auto';
+        }
+    }else{
         imagen2.style.width = '100%';
         imagen2.style.height = 'auto';
     }

@@ -29,6 +29,10 @@ $color6: #42191b;
   background: $color5;
 }
 
+body{
+  background-color: $color1;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -600,6 +604,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
   background-color: rgba($color: #f7ac6a, $alpha: 0.2);
 
@@ -708,7 +713,7 @@ footer{
     text-align: center;
 
     img{
-      width: 100%;
+      width: 80%;
       max-width: 300px;
     }
     p{
@@ -741,7 +746,7 @@ footer{
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-
+    text-align: center;
     h2{
       color: white;
       font-weight: 600;
@@ -780,6 +785,100 @@ footer{
     
   }
   
+}
+
+.portfolio-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+
+  .portfolio{
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    overflow: hidden;
+    background-color: $color5;
+
+    .port-left, .port-left2, .port-left3, .port-left4{
+      background-image: url('/totumdev/Portfolio/img/Deco Green.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 50% auto;
+      background-attachment: fixed;
+    }
+
+    .port-left2{
+      background-image: url('/totumdev/Portfolio/img/Aralix Mockup.png');
+    }
+    .port-left3{
+      background-image: url('/totumdev/Portfolio/img/Manuel Alonso Design.png');
+    }
+    .port-left4{
+      background-image: url('/totumdev/Portfolio/img/Sublik Media.png');
+    }
+
+    .port-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .content{
+        text-align: center;
+        padding: 30px;
+
+        h1{
+          color: white;
+          font-size: 4em;
+        }
+        p{
+          color: white;
+        }
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          width: 100px;
+          height: 40px;
+          margin: 10px auto;
+          background-color: rgba($color: #000000, $alpha: 0.3);
+          text-decoration: none;
+          color: white;
+          border-radius: 1em;
+        }
+      }
+      
+    }
+  }
+  .portfolio:nth-child(2){
+    background-color: #7100FC;
+  }
+  .portfolio:nth-child(3){
+    background-color: #F8AF2C;
+  }
+  .portfolio:nth-child(4){
+    background-color: #334061;
+  }
+  .portfolio:nth-child(5){
+    background-color: #eee;
+
+    .port-right{
+      .content{
+        h1{
+          color: #333333;
+        }
+        p{
+          color: #333333;
+        }
+      }
+    }
+  }
 }
 /*-------------------------------------
 
