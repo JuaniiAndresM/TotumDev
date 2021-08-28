@@ -1381,14 +1381,15 @@ footer .footer-right .redes-wrapper a:hover {
   -ms-grid-columns: 60% 1fr;
       grid-template-columns: 60% 1fr;
   overflow: hidden;
-  background-color: #83967a;
+  background-color: #f7ddb6;
 }
 
 .portfolio-wrapper .portfolio .port-left,
 .portfolio-wrapper .portfolio .port-left2,
 .portfolio-wrapper .portfolio .port-left3,
-.portfolio-wrapper .portfolio .port-left4 {
-  background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
+.portfolio-wrapper .portfolio .port-left4,
+.portfolio-wrapper .portfolio .port-left5 {
+  background-image: url("/totumdev/Portfolio/img/TotumDevWeb.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 50% auto;
@@ -1398,19 +1399,24 @@ footer .footer-right .redes-wrapper a:hover {
 .portfolio-wrapper .portfolio .port-left .mobile-img,
 .portfolio-wrapper .portfolio .port-left2 .mobile-img,
 .portfolio-wrapper .portfolio .port-left3 .mobile-img,
-.portfolio-wrapper .portfolio .port-left4 .mobile-img {
+.portfolio-wrapper .portfolio .port-left4 .mobile-img,
+.portfolio-wrapper .portfolio .port-left5 .mobile-img {
   display: none;
 }
 
 .portfolio-wrapper .portfolio .port-left2 {
-  background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
+  background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left3 {
-  background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+  background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left4 {
+  background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+}
+
+.portfolio-wrapper .portfolio .port-left5 {
   background-image: url("/totumdev/Portfolio/img/SublikMediaWeb.png");
 }
 
@@ -1467,27 +1473,43 @@ footer .footer-right .redes-wrapper a:hover {
   border-radius: 1em;
 }
 
-.portfolio-wrapper .portfolio:nth-child(2) {
-  background-color: #7100fc;
+.portfolio-wrapper .portfolio:nth-child(1) {
+  height: 100vh;
 }
 
-.portfolio-wrapper .portfolio:nth-child(3) {
-  background-color: #f8af2c;
-}
-
-.portfolio-wrapper .portfolio:nth-child(4) {
-  background-color: #334061;
-}
-
-.portfolio-wrapper .portfolio:nth-child(5) {
-  background-color: #eee;
-}
-
-.portfolio-wrapper .portfolio:nth-child(5) .port-right .content h1 {
+.portfolio-wrapper .portfolio:nth-child(1) .port-right .content h1 {
   color: #333333;
 }
 
-.portfolio-wrapper .portfolio:nth-child(5) .port-right .content p {
+.portfolio-wrapper .portfolio:nth-child(1) .port-right .content p {
+  color: #333333;
+}
+
+.portfolio-wrapper .portfolio:nth-child(2) {
+  background-color: #83967a;
+}
+
+.portfolio-wrapper .portfolio:nth-child(3) {
+  background-color: #7100fc;
+}
+
+.portfolio-wrapper .portfolio:nth-child(4) {
+  background-color: #f8af2c;
+}
+
+.portfolio-wrapper .portfolio:nth-child(5) {
+  background-color: #334061;
+}
+
+.portfolio-wrapper .portfolio:nth-child(6) {
+  background-color: #eee;
+}
+
+.portfolio-wrapper .portfolio:nth-child(6) .port-right .content h1 {
+  color: #333333;
+}
+
+.portfolio-wrapper .portfolio:nth-child(6) .port-right .content p {
   color: #333333;
 }
 

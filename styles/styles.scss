@@ -1047,13 +1047,14 @@ footer {
     display: grid;
     grid-template-columns: 60% 1fr;
     overflow: hidden;
-    background-color: $color5;
+    background-color: $color1;
 
     .port-left,
     .port-left2,
     .port-left3,
-    .port-left4 {
-      background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
+    .port-left4,
+    .port-left5 {
+      background-image: url("/totumdev/Portfolio/img/TotumDevWeb.png");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 50% auto;
@@ -1065,12 +1066,15 @@ footer {
     }
 
     .port-left2 {
-      background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
+      background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
     }
     .port-left3 {
-      background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+      background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
     }
     .port-left4 {
+      background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+    }
+    .port-left5 {
       background-image: url("/totumdev/Portfolio/img/SublikMediaWeb.png");
     }
 
@@ -1111,16 +1115,32 @@ footer {
       }
     }
   }
+  .portfolio:nth-child(1){
+    height: 100vh;
+    .port-right {
+      .content {
+        h1 {
+          color: #333333;
+        }
+        p {
+          color: #333333;
+        }
+      }
+    }
+  }
   .portfolio:nth-child(2) {
-    background-color: #7100fc;
+    background-color: $color5;
   }
   .portfolio:nth-child(3) {
-    background-color: #f8af2c;
+    background-color: #7100fc;
   }
   .portfolio:nth-child(4) {
-    background-color: #334061;
+    background-color: #f8af2c;
   }
   .portfolio:nth-child(5) {
+    background-color: #334061;
+  }
+  .portfolio:nth-child(6) {
     background-color: #eee;
 
     .port-right {
