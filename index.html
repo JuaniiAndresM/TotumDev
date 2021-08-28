@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="Javascript/landing.js"></script>
   <script src="Javascript/hyf.js"></script>
+  <script src="Contacto/JS/contacto.js"></script>
 
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Inicio | TotumDev</title>
@@ -135,11 +136,17 @@
 
       <h1>¿En qué podemos ayudarte?</h1>
 
-      <form action="index.html" method="GET">
-        <input type="text" placeholder="Nombre" name="Nombre" />
-        <input type="email" placeholder="Correo Electronico" name="email" />
-        <input type="text" placeholder="Celular" name="Celular" />
-        <textarea placeholder="¿Qué tienes en mente?" name="Comentario"></textarea>
+      <form action="javascript: enviar()" method="POST">
+        <input type="text" placeholder="Nombre" name="Nombre" id="nombre" required/>
+        <input type="email" placeholder="Correo Electronico" name="email" id="email" required/>
+        <input type="text" placeholder="Celular" name="Celular" id="celular" required/>
+        <textarea placeholder="¿Qué tienes en mente?" name="Comentario" id="comentario" required></textarea>
+        
+        <div class="loader">
+          <i class="fas fa-spinner"></i>        
+        </div>
+        <p class="mensaje"></p>
+        
         <input type="submit" value="Enviar" />
       </form>
     </section>
