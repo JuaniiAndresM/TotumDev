@@ -1219,14 +1219,14 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 }
 
 .disweb-planes-wrapper .disweb-planes .card a {
-  background-color: #C38854;
+  background-color: #c38854;
   padding: 15px 10px;
   border-radius: 10px;
   text-decoration: none;
   color: #f7ddb6;
   font-weight: 600;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .disweb-planes-wrapper .disweb-planes .card a:hover {
@@ -1442,12 +1442,13 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .portfolio-wrapper .portfolio .port-right .content img {
-  width: 200px;
+  width: 180px;
+  margin: 10px 0;
 }
 
 .portfolio-wrapper .portfolio .port-right .content h1 {
   color: white;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .portfolio-wrapper .portfolio .port-right .content p {
@@ -1511,6 +1512,226 @@ footer .footer-right .redes-wrapper a:hover {
 
 .portfolio-wrapper .portfolio:nth-child(6) .port-right .content p {
   color: #333333;
+}
+
+.blog-wrapper {
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  width: 80%;
+}
+
+.blog-wrapper .post {
+  width: 100%;
+}
+
+.blog-wrapper .post h1 {
+  color: #444;
+  font-size: 3em;
+}
+
+.blog-wrapper .post .post-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 1fr;
+      grid-template-columns: 60% 1fr;
+  color: #444;
+}
+
+.blog-wrapper .post .post-content .post-body {
+  margin-right: 20px;
+}
+
+.blog-wrapper .post .post-content .post-body h3 {
+  font-size: 1.5em;
+}
+
+.blog-wrapper .post .post-content .post-body hr {
+  border: 1px solid #702c2e;
+  margin: 20px 0;
+  width: 40%;
+}
+
+.blog-wrapper .post .post-content .post-body p {
+  margin: 20px 0;
+}
+
+.blog-wrapper .post .post-content .post-body .autorfecha p {
+  color: #702c2e;
+  font-weight: 600;
+}
+
+.blog-wrapper .post .post-content .post-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-wrapper .post .post-content .post-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-wrapper .post .button-wrapper {
+  margin: 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-wrapper .post .button-wrapper button {
+  width: 150px;
+  height: 50px;
+  background-color: #702c2e;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blog-wrapper .post .button-wrapper button i {
+  margin-right: 10px;
+}
+
+.blog-wrapper .post .button-wrapper button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-wrapper2 {
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-wrapper2 .mont1, .blog-wrapper2 .mont2 {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.blog-wrapper2 h1 {
+  font-size: 3em;
+  color: #702c2e;
+}
+
+.blog-wrapper2 hr {
+  width: 100px;
+  margin: 10px 0;
+  border: 1px solid #702c2e;
+}
+
+.blog-wrapper2 .post-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-wrapper2 .post-wrapper .post {
+  padding: 20px;
+  background-color: #702c2e;
+  width: 350px;
+  min-height: 450px;
+  margin: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-wrapper2 .post-wrapper .post .post-img {
+  width: 95%;
+  height: 180px;
+}
+
+.blog-wrapper2 .post-wrapper .post .post-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.blog-wrapper2 .post-wrapper .post h1 {
+  color: #f7ddb6;
+  font-weight: 600;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.blog-wrapper2 .post-wrapper .post hr {
+  width: 90%;
+  border: 1px solid #f7ddb6;
+}
+
+.blog-wrapper2 .post-wrapper .post p {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #f7ac6a;
+}
+
+.blog-wrapper2 .post-wrapper .post button {
+  background-color: #f7ac6a;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 20px;
 }
 
 /*-------------------------------------
@@ -1794,6 +2015,27 @@ footer .footer-right .redes-wrapper a:hover {
   footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .blog-wrapper {
+    width: 90%;
+  }
+  .blog-wrapper .post h1 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .blog-wrapper .post .post-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .blog-wrapper .post .post-content .post-body hr {
+    width: 100%;
+  }
+  .blog-wrapper .post .post-content .post-img {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .blog-wrapper .post .post-content .post-img img {
+    border-radius: 20px;
   }
 }
 
