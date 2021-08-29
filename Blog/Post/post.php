@@ -70,13 +70,13 @@ echo '<!DOCTYPE html>
               </div>
               <div class="button-wrapper">';
 
-              if(($id + 1) > 1){
-                echo '<button onclick="post('.(($id + 1) - 1).')" id="anterior"><i class="fas fa-chevron-circle-left"></i> Post Anterior</button>';
+              if(($id + 1) < $cantidadPost){
+                echo '<button onclick="post('.(($id + 1) + 1).')" id="anterior"><i class="fas fa-chevron-circle-left"></i> Post Anterior</button>';
               }else{
                 echo '<div></div>';
               }
-              if(($id + 1) < $cantidadPost){
-                echo '<button onclick="post('.(($id + 1) + 1).')" id="siguiente"><i class="fas fa-chevron-circle-right"></i> Post Siguiente</button>';
+              if(($id + 1) > 1){
+                echo '<button onclick="post('.(($id + 1) - 1).')" id="siguiente"><i class="fas fa-chevron-circle-right"></i> Post Siguiente</button>';
               }                  
               echo '  
               </div>
