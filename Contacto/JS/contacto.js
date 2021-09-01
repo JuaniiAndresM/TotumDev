@@ -17,6 +17,7 @@ function enviar(){
                 $('.mensaje').text('¡Mail Enviado Correctamente!');
                 $('.mensaje').css('background-color', '#83967a');
             }else{
+                console.log(response);
                 $('.mensaje').text('Ups... Hubo un error en el envío, prueba intentarlo más tarde.');
                 $('.mensaje').css('background-color', '#702c2e');                
             }

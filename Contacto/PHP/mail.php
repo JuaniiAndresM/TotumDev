@@ -19,24 +19,24 @@ $comentario = $_POST['comentario'];
 
 $mail = new PHPMailer(true);
 
-$mail->SMTPDebug = 0; 
-$mail->IsSMTP();
+$mail->SMTPDebug = 2; 
+//$mail->IsSMTP();
 
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'tls';
 
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'mail.totumdev.uy';
 $mail->Port = 587;  // TCP port to connect to
 $mail->CharSet = 'UTF-8';
 
 
-$mail->Username ='totumorganizacion@gmail.com';  //  Editar
-$mail->Password = 'manuni7817'; //  Editar
+$mail->Username ='contacto@totumdev.uy';  //  Editar
+$mail->Password = 'Manuni7817'; //  Editar
 
 
 $mail->From = $email; //  Editar
 $mail->FromName = 'TotumDev';  //  Editar
-$mail->addAddress('totumdevcontacto@gmail.com', $nombre);  //  Editar
+$mail->addAddress('contacto@totumdev.uy', $nombre);  //  Editar
 $mail->isHTML(true);
 $mail->Subject = "Nuevo Mensaje De: " . $nombre;    //  Editar
 
@@ -94,6 +94,7 @@ try {
 
 } catch (Exception $e) {
 
-    echo 0;
+    echo "Mailer Error: " . $mail->ErrorInfo;
+    //echo 0;
     return 0;
 }

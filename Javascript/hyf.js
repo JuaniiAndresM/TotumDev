@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    $("#header").load("/totumdev/hyf/header.html");
-    $("#footer").load("/totumdev/hyf/footer.html");
+    $("#header").load("/hyf/header.html");
+    $("#footer").load("/hyf/footer.html");
 });

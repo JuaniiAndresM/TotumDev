@@ -7,7 +7,7 @@ $color6: #42191b;
 
 @font-face {
   font-family: BerlinSans;
-  src: url("../fonts/BerlinSans.ttf");
+  src: url("/fonts/BerlinSans.ttf");
 }
 
 * {
@@ -1049,8 +1049,10 @@ footer {
     .port-left2,
     .port-left3,
     .port-left4,
-    .port-left5 {
-      background-image: url("/totumdev/Portfolio/img/TotumDevWeb.png");
+    .port-left5,
+    .port-left6,
+    .port-left7 {
+      background-image: url("https://www.totumdev.uy/Portfolio/img/TotumDevWeb.png");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 50% auto;
@@ -1062,16 +1064,22 @@ footer {
     }
 
     .port-left2 {
-      background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
     }
     .port-left3 {
-      background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/AralixWeb.png");
     }
     .port-left4 {
-      background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/ManuelAlonsoDesignWeb.png");
     }
     .port-left5 {
-      background-image: url("/totumdev/Portfolio/img/SublikMediaWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+    }
+    .port-left6 {
+      background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+    }
+    .port-left7 {
+      background-image: url("https://www.totumdev.uy/Portfolio/img/RocioTaboadaWeb.png");
     }
 
     .port-right {
@@ -1150,6 +1158,9 @@ footer {
         }
       }
     }
+  }
+  .portfolio:nth-child(7) {
+    background-color: #508540;
   }
 }
 
@@ -1325,6 +1336,78 @@ footer {
     }
   }
 }
+
+
+.login-wrapper{
+  width: 100%;
+  padding: 80px 0;
+  margin: 100px 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mont1, .mont2{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: $color4;
+    border-radius: 2em;
+    padding: 20px;
+
+    width: 300px;
+
+    img{
+      width: 100%;
+      max-width: 200px;
+    }
+
+    form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      margin: 10px;
+      width: 90%;
+
+      label{
+        color: white;
+      }
+
+      input{
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        margin: 5px 0;
+
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input[type="submit"]{
+        padding: 0;
+        background-color: $color6;
+        color: white;
+        font-weight: normal;
+        font-size: 1em;
+      }
+    }
+  }
+}
 /*-------------------------------------
 
             Animaciones
@@ -1430,7 +1513,10 @@ footer {
       .port-left,
       .port-left2,
       .port-left3,
-      .port-left4 {
+      .port-left4,
+      .port-left5,
+      .port-left6,
+      .port-left7 {
         background: none;
 
         .mobile-img {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: BerlinSans;
-  src: url("../fonts/BerlinSans.ttf");
+  src: url("/fonts/BerlinSans.ttf");
 }
 
 * {
@@ -1388,8 +1388,10 @@ footer .footer-right .redes-wrapper a:hover {
 .portfolio-wrapper .portfolio .port-left2,
 .portfolio-wrapper .portfolio .port-left3,
 .portfolio-wrapper .portfolio .port-left4,
-.portfolio-wrapper .portfolio .port-left5 {
-  background-image: url("/totumdev/Portfolio/img/TotumDevWeb.png");
+.portfolio-wrapper .portfolio .port-left5,
+.portfolio-wrapper .portfolio .port-left6,
+.portfolio-wrapper .portfolio .port-left7 {
+  background-image: url("https://www.totumdev.uy/Portfolio/img/TotumDevWeb.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 50% auto;
@@ -1400,24 +1402,34 @@ footer .footer-right .redes-wrapper a:hover {
 .portfolio-wrapper .portfolio .port-left2 .mobile-img,
 .portfolio-wrapper .portfolio .port-left3 .mobile-img,
 .portfolio-wrapper .portfolio .port-left4 .mobile-img,
-.portfolio-wrapper .portfolio .port-left5 .mobile-img {
+.portfolio-wrapper .portfolio .port-left5 .mobile-img,
+.portfolio-wrapper .portfolio .port-left6 .mobile-img,
+.portfolio-wrapper .portfolio .port-left7 .mobile-img {
   display: none;
 }
 
 .portfolio-wrapper .portfolio .port-left2 {
-  background-image: url("/totumdev/Portfolio/img/DecoGreenWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left3 {
-  background-image: url("/totumdev/Portfolio/img/AralixWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/AralixWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left4 {
-  background-image: url("/totumdev/Portfolio/img/ManuelAlonsoDesignWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/ManuelAlonsoDesignWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left5 {
-  background-image: url("/totumdev/Portfolio/img/SublikMediaWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+}
+
+.portfolio-wrapper .portfolio .port-left6 {
+  background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+}
+
+.portfolio-wrapper .portfolio .port-left7 {
+  background-image: url("https://www.totumdev.uy/Portfolio/img/RocioTaboadaWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-right {
@@ -1512,6 +1524,10 @@ footer .footer-right .redes-wrapper a:hover {
 
 .portfolio-wrapper .portfolio:nth-child(6) .port-right .content p {
   color: #333333;
+}
+
+.portfolio-wrapper .portfolio:nth-child(7) {
+  background-color: #508540;
 }
 
 .blog-wrapper {
@@ -1732,6 +1748,101 @@ footer .footer-right .redes-wrapper a:hover {
   height: 40px;
   margin: 10px 0;
   border-radius: 20px;
+}
+
+.login-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  margin: 100px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-wrapper .mont1, .login-wrapper .mont2 {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+}
+
+.login-wrapper .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #702c2e;
+  border-radius: 2em;
+  padding: 20px;
+  width: 300px;
+}
+
+.login-wrapper .login img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.login-wrapper .login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  width: 90%;
+}
+
+.login-wrapper .login form label {
+  color: white;
+}
+
+.login-wrapper .login form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-wrapper .login form input[type="submit"] {
+  padding: 0;
+  background-color: #42191b;
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 /*-------------------------------------
@@ -1964,13 +2075,19 @@ footer .footer-right .redes-wrapper a:hover {
   .portfolio-wrapper .portfolio .port-left,
   .portfolio-wrapper .portfolio .port-left2,
   .portfolio-wrapper .portfolio .port-left3,
-  .portfolio-wrapper .portfolio .port-left4 {
+  .portfolio-wrapper .portfolio .port-left4,
+  .portfolio-wrapper .portfolio .port-left5,
+  .portfolio-wrapper .portfolio .port-left6,
+  .portfolio-wrapper .portfolio .port-left7 {
     background: none;
   }
   .portfolio-wrapper .portfolio .port-left .mobile-img,
   .portfolio-wrapper .portfolio .port-left2 .mobile-img,
   .portfolio-wrapper .portfolio .port-left3 .mobile-img,
-  .portfolio-wrapper .portfolio .port-left4 .mobile-img {
+  .portfolio-wrapper .portfolio .port-left4 .mobile-img,
+  .portfolio-wrapper .portfolio .port-left5 .mobile-img,
+  .portfolio-wrapper .portfolio .port-left6 .mobile-img,
+  .portfolio-wrapper .portfolio .port-left7 .mobile-img {
     display: block;
     margin: 0 auto;
     max-width: 500px;

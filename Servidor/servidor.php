@@ -3,7 +3,7 @@ class servidor
 {
     function conectar()
     {
-        if (!$conexion = mysqli_connect('localhost', 'root', 'root', 'totumdev')) {
+        if (!$conexion = mysqli_connect('totumdev.uy', 'nqjctkft_totumdev', 'Manuni7817', 'nqjctkft_totumdev')) {
             echo "No se pudo conectar a la base de datos";
             exit;
         } else {
