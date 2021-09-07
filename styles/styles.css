@@ -1110,6 +1110,19 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
   max-width: 600px;
   width: 100%;
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .disweb-wrapper .disweb .disweb-content h1 {
@@ -1119,6 +1132,26 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 
 .disweb-wrapper .disweb .disweb-content p {
   color: #f7ddb6;
+  text-align: center;
+}
+
+.disweb-wrapper .disweb .disweb-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #702c2e;
+  color: #f7ac6a;
+  width: 100px;
+  height: 40px;
+  margin: 20px 0;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .disweb-wrapper .section-piedras-reverse {
@@ -1144,6 +1177,12 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
           align-items: center;
 }
 
+.disweb-planes-wrapper .mont1, .disweb-planes-wrapper .mont2 {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
 .disweb-planes-wrapper .disweb-planes {
   width: 100%;
   display: -webkit-box;
@@ -1160,9 +1199,10 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 }
 
 .disweb-planes-wrapper .disweb-planes .card {
-  background-color: #f7ac6a;
+  background-color: #E69A58;
   max-width: 350px;
   width: 100%;
+  height: 350px;
   border-radius: 20px;
   padding: 30px;
   margin: 10px;
@@ -1172,10 +1212,15 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .disweb-planes-wrapper .disweb-planes .card .icon {
@@ -1219,12 +1264,13 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 }
 
 .disweb-planes-wrapper .disweb-planes .card a {
-  background-color: #c38854;
+  background-color: #F7DDB6;
   padding: 15px 10px;
   border-radius: 10px;
   text-decoration: none;
-  color: #f7ddb6;
+  color: #f7ac6a;
   font-weight: 600;
+  font-size: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1843,6 +1889,91 @@ footer .footer-right .redes-wrapper a:hover {
   color: white;
   font-weight: normal;
   font-size: 1em;
+}
+
+.nosotros-wrapper {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.nosotros-wrapper .mont1, .nosotros-wrapper .mont2 {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+}
+
+.nosotros-wrapper .section-piedras {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100%;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+.nosotros-wrapper .section-piedras-reverse {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  width: 100%;
+  height: 100px;
+  margin-top: -5px;
+}
+
+.nosotros-wrapper .nosotros {
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #42191b;
+}
+
+.nosotros-wrapper .nosotros .nosotros-img {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px 20px;
+}
+
+.nosotros-wrapper .nosotros .nosotros-img img {
+  width: 100%;
+}
+
+.nosotros-wrapper .nosotros .nosotros-content {
+  margin: 10px 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.nosotros-wrapper .nosotros .nosotros-content h1 {
+  font-size: 3em;
+  color: #f7ddb6;
+}
+
+.nosotros-wrapper .nosotros .nosotros-content h3 {
+  font-size: 1.5em;
+  color: #f7ddb6;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.nosotros-wrapper .nosotros .nosotros-content hr {
+  width: 200px;
+  border: 1px solid #f7ddb6;
+  margin: 10px 0;
+}
+
+.nosotros-wrapper .nosotros .nosotros-content p {
+  color: white;
+  margin: 10px 0;
+  margin-top: 5px;
 }
 
 /*-------------------------------------
