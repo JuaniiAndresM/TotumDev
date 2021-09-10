@@ -958,9 +958,11 @@ header {
         color: $color1;
         margin: 10px;
       }
-      a {
+      button {
         background-color: #F7DDB6;
         padding: 15px 10px;
+        border: none;
+        cursor: pointer;
         border-radius: 10px;
         text-decoration: none;
         color: $color2;
@@ -1095,7 +1097,8 @@ footer {
     }
 
     .port-left2 {
-      background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/ZorkrautWeb.png");
+      
     }
     .port-left3 {
       background-image: url("https://www.totumdev.uy/Portfolio/img/AralixWeb.png");
@@ -1107,7 +1110,7 @@ footer {
       background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
     }
     .port-left6 {
-      background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+      background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
     }
     .port-left7 {
       background-image: url("https://www.totumdev.uy/Portfolio/img/RocioTaboadaWeb.png");
@@ -1165,18 +1168,6 @@ footer {
     }
   }
   .portfolio:nth-child(2) {
-    background-color: $color5;
-  }
-  .portfolio:nth-child(3) {
-    background-color: #7100fc;
-  }
-  .portfolio:nth-child(4) {
-    background-color: #f8af2c;
-  }
-  .portfolio:nth-child(5) {
-    background-color: #334061;
-  }
-  .portfolio:nth-child(6) {
     background-color: #eee;
 
     .port-right {
@@ -1189,6 +1180,18 @@ footer {
         }
       }
     }
+  }
+  .portfolio:nth-child(3) {
+    background-color: #7100fc;
+  }
+  .portfolio:nth-child(4) {
+    background-color: #f8af2c;
+  }
+  .portfolio:nth-child(5) {
+    background-color: #334061;
+  }
+  .portfolio:nth-child(6) {
+    background-color: $color5;
   }
   .portfolio:nth-child(7) {
     background-color: #508540;

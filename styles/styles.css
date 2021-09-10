@@ -1263,9 +1263,11 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
   margin: 10px;
 }
 
-.disweb-planes-wrapper .disweb-planes .card a {
+.disweb-planes-wrapper .disweb-planes .card button {
   background-color: #F7DDB6;
   padding: 15px 10px;
+  border: none;
+  cursor: pointer;
   border-radius: 10px;
   text-decoration: none;
   color: #f7ac6a;
@@ -1455,7 +1457,7 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .portfolio-wrapper .portfolio .port-left2 {
-  background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/ZorkrautWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left3 {
@@ -1471,7 +1473,7 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .portfolio-wrapper .portfolio .port-left6 {
-  background-image: url("https://www.totumdev.uy/Portfolio/img/SublikMediaWeb.png");
+  background-image: url("https://www.totumdev.uy/Portfolio/img/DecoGreenWeb.png");
 }
 
 .portfolio-wrapper .portfolio .port-left7 {
@@ -1545,7 +1547,15 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .portfolio-wrapper .portfolio:nth-child(2) {
-  background-color: #83967a;
+  background-color: #eee;
+}
+
+.portfolio-wrapper .portfolio:nth-child(2) .port-right .content h1 {
+  color: #333333;
+}
+
+.portfolio-wrapper .portfolio:nth-child(2) .port-right .content p {
+  color: #333333;
 }
 
 .portfolio-wrapper .portfolio:nth-child(3) {
@@ -1561,15 +1571,7 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .portfolio-wrapper .portfolio:nth-child(6) {
-  background-color: #eee;
-}
-
-.portfolio-wrapper .portfolio:nth-child(6) .port-right .content h1 {
-  color: #333333;
-}
-
-.portfolio-wrapper .portfolio:nth-child(6) .port-right .content p {
-  color: #333333;
+  background-color: #83967a;
 }
 
 .portfolio-wrapper .portfolio:nth-child(7) {
