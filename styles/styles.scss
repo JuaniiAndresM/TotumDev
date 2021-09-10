@@ -1515,6 +1515,109 @@ footer {
     }
   }
 }
+
+
+.plan-wrapper-form{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+
+  .mont1, .mont2{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  form{
+    width: 100%;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: $color4;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 20px;
+
+    img{
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
+    }
+
+    .input-wrapper{
+
+      margin-top: 20px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      color: white;
+
+      input, textarea{
+        width: 100%;
+        height: 40px;
+        
+        border: 1px solid white;
+        color: $color4;
+        border-radius: 10px;
+        outline: none;
+        background-color: white;
+        margin: 5px 0;
+        padding: 5px;
+
+        resize: vertical;
+      }
+      input::placeholder{
+        color: #666;
+      }
+      input[name="Plan"]{
+        color: $color4;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      textarea{
+        height: 100px;
+      }
+    }
+    .loader{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+
+      margin: 5px;
+      animation: 1s spinner linear infinite;
+      i {
+        color: #f7ac6a;
+        font-size: 2em;
+      }
+
+
+    }
+
+    input[type="submit"]{
+      width: 100%;
+      height: 40px;
+      background-color: $color2;
+      outline: none;
+      border: none;
+
+      color: $color4;
+      font-weight: 600;
+      cursor: pointer;
+
+      border-radius: 10px;
+    }
+  }
+}
 /*-------------------------------------
 
             Animaciones

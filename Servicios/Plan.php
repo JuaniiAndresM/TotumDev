@@ -26,28 +26,38 @@ echo '
         <script src="https://kit.fontawesome.com/1e193e3a23.js" crossorigin="anonymous"></script>
         <script src="https://www.totumdev.uy/Javascript/hyf.js"></script>
 
-        <link rel="stylesheet" href="https://www.totumdev.uy/styles/styles.css">
+        <link rel="stylesheet" href="/totumdev/styles/styles.css">
         <title>Document</title>
     </head>
     <body>
 
         <div class="plan-wrapper-form">
+            <img class="mont1" src="https://www.totumdev.uy/media/svg/Mont1.svg" alt="" />
+            <img class="mont2" src="https://www.totumdev.uy/media/svg/Mont2.svg" alt="" />
 
             <form action="javascript: enviar()" method="POST">
-                <label for="Plan">Tipo de Plan:</label>
-                <input type="text" placeholder="Tipo de Plan" name="Plan" id="plan" readonly value="'.$tipo_plan.'"/>
+                <img src="/totumdev/media/svg/LogoHorizontal.svg">
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre Completo" name="nombre" id="nombre" required/>
+                <div class="input-wrapper">
 
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Correo Electronico" name="email" id="email" required/>
+                    <label for="Plan">Tipo de Plan:</label>
+                    <input type="text" placeholder="Tipo de Plan" name="Plan" id="plan" readonly value="'.$tipo_plan.'"/>
 
-                <label for="Celular">Celular:</label>
-                <input type="text" placeholder="Celular" name="Celular" id="celular" required/>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre Completo" name="nombre" id="nombre" required/>
 
-                <label for="Comentario">Comentario:</label>
-                <textarea placeholder="¿Qué tienes en mente?" name="Comentario" id="comentario" required></textarea>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Correo Electronico" name="email" id="email" required/>
+
+                    <label for="Celular">Celular:</label>
+                    <input type="text" placeholder="Celular" name="Celular" id="celular" required/>
+
+                    <label for="Comentario">Comentario:</label>
+                    <textarea placeholder="¿Qué tienes en mente?" name="Comentario" id="comentario" required></textarea>
+
+                </div>
+
+                <p class="mensaje"></p>
 
                 <div class="loader">
                     <i class="fas fa-spinner"></i>
