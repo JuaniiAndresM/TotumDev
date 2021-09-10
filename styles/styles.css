@@ -1978,6 +1978,138 @@ footer .footer-right .redes-wrapper a:hover {
   margin-top: 5px;
 }
 
+.plan-wrapper-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.plan-wrapper-form .mont1, .plan-wrapper-form .mont2 {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.plan-wrapper-form form {
+  width: 100%;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: #702c2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.plan-wrapper-form form img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.plan-wrapper-form form .input-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.plan-wrapper-form form .input-wrapper input, .plan-wrapper-form form .input-wrapper textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid white;
+  color: #702c2e;
+  border-radius: 10px;
+  outline: none;
+  background-color: white;
+  margin: 5px 0;
+  padding: 5px;
+  resize: vertical;
+}
+
+.plan-wrapper-form form .input-wrapper input::-webkit-input-placeholder {
+  color: #666;
+}
+
+.plan-wrapper-form form .input-wrapper input:-ms-input-placeholder {
+  color: #666;
+}
+
+.plan-wrapper-form form .input-wrapper input::-ms-input-placeholder {
+  color: #666;
+}
+
+.plan-wrapper-form form .input-wrapper input::placeholder {
+  color: #666;
+}
+
+.plan-wrapper-form form .input-wrapper input[name="Plan"] {
+  color: #702c2e;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.plan-wrapper-form form .input-wrapper textarea {
+  height: 100px;
+}
+
+.plan-wrapper-form form .loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px;
+  -webkit-animation: 1s spinner linear infinite;
+          animation: 1s spinner linear infinite;
+}
+
+.plan-wrapper-form form .loader i {
+  color: #f7ac6a;
+  font-size: 2em;
+}
+
+.plan-wrapper-form form input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #f7ac6a;
+  outline: none;
+  border: none;
+  color: #702c2e;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 /*-------------------------------------
 
             Animaciones
