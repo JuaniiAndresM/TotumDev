@@ -33,5 +33,19 @@ class servidor
         return $post;
     }
 
+    function CrearPost($titulo, $subtitulo, $contenido, $imagen, $autor, $fecha){
+        $conn = $this->conectar();
+        $sql = "CALL CrearPost(?,?,?,?,?,?)";
+        $stmts = $conn->prepare($sql);
+        $execute = false;
+
+        $stmts->bind_param("ssssss", $titulo, $subtitulo, $contenido, $imagen, $autor, $fecha);
+        if($stmts->execute()){
+            $execute = true;            
+        }
+        return $execute;
+    }
+
+
 }
 ?>

@@ -1990,6 +1990,7 @@ footer .footer-right .redes-wrapper a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 0;
+  margin: 100px 0;
 }
 
 .plan-wrapper-form .mont1, .plan-wrapper-form .mont2 {
@@ -2021,6 +2022,10 @@ footer .footer-right .redes-wrapper a:hover {
   width: 100%;
   max-width: 300px;
   margin: 10px auto;
+}
+
+.plan-wrapper-form form h1 {
+  color: white;
 }
 
 .plan-wrapper-form form .input-wrapper {
@@ -2078,9 +2083,7 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 .plan-wrapper-form form .loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2089,13 +2092,13 @@ footer .footer-right .redes-wrapper a:hover {
           align-items: center;
   padding: 5px;
   margin: 5px;
-  -webkit-animation: 1s spinner linear infinite;
-          animation: 1s spinner linear infinite;
 }
 
 .plan-wrapper-form form .loader i {
   color: #f7ac6a;
   font-size: 2em;
+  -webkit-animation: 1s spinner linear infinite;
+          animation: 1s spinner linear infinite;
 }
 
 .plan-wrapper-form form input[type="submit"] {

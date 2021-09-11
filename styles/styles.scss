@@ -1526,6 +1526,8 @@ footer {
 
   padding: 40px 0;
 
+  margin: 100px 0;
+
   .mont1, .mont2{
     position: fixed;
     bottom: 0;
@@ -1549,6 +1551,10 @@ footer {
       width: 100%;
       max-width: 300px;
       margin: 10px auto;
+    }
+
+    h1{
+      color: white;
     }
 
     .input-wrapper{
@@ -1588,16 +1594,17 @@ footer {
       }
     }
     .loader{
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       padding: 5px;
 
       margin: 5px;
-      animation: 1s spinner linear infinite;
+      
       i {
         color: #f7ac6a;
         font-size: 2em;
+        animation: 1s spinner linear infinite;
       }
 
 
