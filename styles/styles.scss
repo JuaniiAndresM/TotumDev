@@ -1523,8 +1523,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 40px 0;
+  margin: 100px 0;
 
   .mont1, .mont2{
     position: fixed;
@@ -1591,13 +1590,18 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       padding: 5px;
+      text-align: center;
+
+      display: none;
 
       margin: 5px;
-      animation: 1s spinner linear infinite;
+      
       i {
         color: #f7ac6a;
         font-size: 2em;
+        animation: 1s spinner linear infinite;
       }
 
 
@@ -1615,6 +1619,18 @@ footer {
       cursor: pointer;
 
       border-radius: 10px;
+    }
+    .mensaje{
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -1811,6 +1827,16 @@ footer {
 }
 
 @media screen and(max-width: 900px) {
+  .section-nosotros{
+    .nuestro-equipo{
+      .card-wrapper{
+        .card-anim-wrapper:hover .card {
+          animation: none;
+        }
+      }
+      
+    }
+  }
   .landing-img-wrapper::after {
     content: "";
     margin-right: -50%;

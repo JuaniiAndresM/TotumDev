@@ -29,7 +29,7 @@ echo '<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/totumdev/media/svg/Favicon.svg"
+      href="/media/svg/Favicon.svg"
       type="image/x-icon"
     />
 
@@ -38,10 +38,9 @@ echo '<!DOCTYPE html>
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/totumdev/Javascript/hyf.js"></script>
-    <script src="post.js"></script>
+    <script src="/Javascript/hyf.js"></script>
 
-    <link rel="stylesheet" href="/totumdev/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>TotumDev | Post</title>
   </head>
   <body>

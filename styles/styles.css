@@ -1989,7 +1989,7 @@ footer .footer-right .redes-wrapper a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  margin: 100px 0;
 }
 
 .plan-wrapper-form .mont1, .plan-wrapper-form .mont2 {
@@ -2087,15 +2087,18 @@ footer .footer-right .redes-wrapper a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   padding: 5px;
+  text-align: center;
+  display: none;
   margin: 5px;
-  -webkit-animation: 1s spinner linear infinite;
-          animation: 1s spinner linear infinite;
 }
 
 .plan-wrapper-form form .loader i {
   color: #f7ac6a;
   font-size: 2em;
+  -webkit-animation: 1s spinner linear infinite;
+          animation: 1s spinner linear infinite;
 }
 
 .plan-wrapper-form form input[type="submit"] {
@@ -2108,6 +2111,24 @@ footer .footer-right .redes-wrapper a:hover {
   font-weight: 600;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.plan-wrapper-form form .mensaje {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*-------------------------------------
@@ -2422,6 +2443,10 @@ footer .footer-right .redes-wrapper a:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .section-nosotros .nuestro-equipo .card-wrapper .card-anim-wrapper:hover .card {
+    -webkit-animation: none;
+            animation: none;
+  }
   .landing-img-wrapper::after {
     content: "";
     margin-right: -50%;

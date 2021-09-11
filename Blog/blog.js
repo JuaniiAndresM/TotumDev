@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $.ajax({
-        url: "armoblog.php",
+        url: "https://www.totumdev.uy/Blog/armoblog.php",
         success: function (response) {
             $('#blog').html(response);
             document.getElementsByClassName('desc').innerText = truncateText('p', 120);
@@ -20,5 +20,5 @@ function truncateText(selector, maxLength) {
 }
 
 function post(id){
-    location.href = 'https://totumdev.uy/Post/' + id;
+    location.href = 'https://www.totumdev.uy/Blog/Post/' + id;
 }

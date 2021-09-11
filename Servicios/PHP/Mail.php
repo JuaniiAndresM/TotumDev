@@ -3,13 +3,14 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../PHPMailer/src/Exception.php';
-require '../PHPMailer/src/PHPMailer.php';
-require '../PHPMailer/src/SMTP.php';
+require '../../Contacto/PHPMailer/src/Exception.php';
+require '../../Contacto/PHPMailer/src/PHPMailer.php';
+require '../../Contacto/PHPMailer/src/SMTP.php';
 
 /*------------------------------------------------------------------------------------------*/
 // Importar Variables (Opcional)
 //
+$plan = $_POST['plan'];
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $celular = $_POST['celular'];
@@ -61,6 +62,9 @@ $mail->Body    = '  <div class="mail" style="max-width: 600px; background: #7200
                                     <td>
                                         <div class="mail-content" style="width: 100%; padding: 40px 0; margin-top: -120px; background: white;">
                                             <h1 style="width: 80%; margin: 20px auto; color: #702c2e; font-family: Comfortaa;">Nueva Solicitud de Contacto</h1>
+                                            <p style="width: 80%; margin: 20px auto; font-family: Comfortaa; color: #555;">
+                                                <b>Tipo de Plan</b>: ' . $plan . '
+                                            </p>
                                             <p style="width: 80%; margin: 20px auto; font-family: Comfortaa; color: #555;">
                                                 <b>Nombre</b>: ' . $nombre . '
                                             </p>
