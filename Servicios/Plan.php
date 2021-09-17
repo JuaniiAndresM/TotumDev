@@ -13,6 +13,12 @@ else if($plan == 2){
 else if($plan == 3){
     $tipo_plan = "Inmobiliaria";
 }
+else if($plan == 4){
+    $tipo_plan = "Consultoría";
+}
+else if($plan == 5){
+    $tipo_plan = "Redes Sociales";
+}
 
 echo '
     <!DOCTYPE html>
@@ -21,22 +27,29 @@ echo '
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="shortcut icon"
+            href="https://www.totumdev.uy/media/svg/Favicon.svg"
+            type="image/x-icon"
+        />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/1e193e3a23.js" crossorigin="anonymous"></script>
         <script src="https://www.totumdev.uy/Javascript/hyf.js"></script>
 
-        <link rel="stylesheet" href="/totumdev/styles/styles.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title>TotumDev | Plan</title>
     </head>
     <body>
+
+        <div id="header"></div>
 
         <div class="plan-wrapper-form">
             <img class="mont1" src="https://www.totumdev.uy/media/svg/Mont1.svg" alt="" />
             <img class="mont2" src="https://www.totumdev.uy/media/svg/Mont2.svg" alt="" />
 
             <form action="javascript: enviar()" method="POST">
-                <img src="/totumdev/media/svg/LogoHorizontal.svg">
+                <img src="/media/svg/LogoHorizontal.svg">
 
                 <div class="input-wrapper">
 
@@ -69,6 +82,8 @@ echo '
             </form>
 
         </div>
+
+        <div id="footer"></div>
 
     </body>
     </html>';

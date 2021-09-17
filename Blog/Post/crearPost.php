@@ -36,8 +36,10 @@
         alt=""
       />
 
-      <form action="javascript: subir()" method="POST">
+      <form action="crear.php" enctype="multipart/form-data" method="POST">
+      
         <img src="/media/svg/LogoHorizontal.svg" />
+
         <h1>Crear Post</h1>
         <div class="input-wrapper">
             <label for="titulo">Titulo:</label>
@@ -57,6 +59,8 @@
             id="subtitulo"
             required
           />
+
+          <input name="uploadedfile" type="file" />
 
           <label for="Contenido">Contenido:</label>
           <textarea
@@ -103,5 +107,10 @@
     </div>
 
     <div id="footer"></div>
+
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace('Contenido');
+    </script>
   </body>
 </html>

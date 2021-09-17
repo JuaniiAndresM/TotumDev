@@ -3,10 +3,18 @@
 include '../../Servidor/servidor.php';
 $server= new servidor();
 
-$id = $_GET['ID'] - 1;
+$id = $_GET['ID'];
 
 $post = $server->TraerPost();
+
 $cantidadPost = count($post);
+
+for($buscoID = 0; $buscoID < $cantidadPost; $buscoID++){
+  if($id == $post[$buscoID]["id"]){
+    $id = $buscoID;
+    break;
+  }
+}
 
 $fecha = $post[$id]["fechapublicacion"];
 
@@ -29,7 +37,7 @@ echo '<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/totumdev/media/svg/Favicon.svg"
+      href="/media/svg/Favicon.svg"
       type="image/x-icon"
     />
 
@@ -38,10 +46,10 @@ echo '<!DOCTYPE html>
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/totumdev/Javascript/hyf.js"></script>
+    <script src="/Javascript/hyf.js"></script>
     <script src="post.js"></script>
 
-    <link rel="stylesheet" href="/totumdev/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>TotumDev | Post</title>
   </head>
   <body>
@@ -70,14 +78,20 @@ echo '<!DOCTYPE html>
               </div>
               <div class="button-wrapper">';
 
-              if(($id + 1) < $cantidadPost){
-                echo '<button onclick="post('.(($id + 1) + 1).')" id="anterior"><i class="fas fa-chevron-circle-left"></i> Post Anterior</button>';
+              
+
+              if($id < ($cantidadPost - 1)){
+                $postSiguiente = $post[$id + 1]["id"];
+
+                echo '<button onclick="post('.$postSiguiente.')" id="anterior"><i class="fas fa-chevron-circle-left"></i> Post Anterior</button>';
               }else{
                 echo '<div></div>';
               }
-              if(($id + 1) > 1){
-                echo '<button onclick="post('.(($id + 1) - 1).')" id="siguiente"><i class="fas fa-chevron-circle-right"></i> Post Siguiente</button>';
-              }                  
+              if($id > 0){
+                $postSiguiente = $post[$id - 1]["id"];
+
+                echo '<button onclick="post('.$postSiguiente.')" id="siguiente"><i class="fas fa-chevron-circle-right"></i> Post Siguiente</button>';
+              }                
               echo '  
               </div>
       </div>

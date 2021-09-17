@@ -1079,6 +1079,12 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
           flex-direction: column;
 }
 
+.disweb-wrapper .mont1, .disweb-wrapper .mont2 {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
 .disweb-wrapper .disweb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,6 +1134,11 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 .disweb-wrapper .disweb .disweb-content h1 {
   font-size: 2.5em;
   color: #f7ddb6;
+  text-align: center;
+}
+
+.disweb-wrapper .disweb .disweb-content .disweb-p {
+  color: #ee6f4a;
 }
 
 .disweb-wrapper .disweb .disweb-content p {
@@ -1135,7 +1146,46 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
   text-align: center;
 }
 
-.disweb-wrapper .disweb .disweb-content a {
+.disweb-wrapper .disweb .disweb-content .servicios {
+  text-align: left;
+}
+
+.disweb-wrapper .disweb .disweb-content .servicios h2 {
+  color: #ee6f4a;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.disweb-wrapper .disweb .disweb-content .servicios .servicio {
+  margin: 20px 0;
+}
+
+.disweb-wrapper .disweb .disweb-content .servicios .servicio b {
+  margin-top: 10px;
+  color: #ee6f4a;
+  font-size: 20px;
+}
+
+.disweb-wrapper .disweb .disweb-content .servicios .servicio p {
+  text-align: left;
+}
+
+.disweb-wrapper .disweb .disweb-content .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.disweb-wrapper .disweb .disweb-content a, .disweb-wrapper .disweb .disweb-content button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,11 +1197,22 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
           align-items: center;
   background-color: #702c2e;
   color: #f7ac6a;
-  width: 100px;
   height: 40px;
-  margin: 20px 0;
+  margin: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
   text-decoration: none;
   border-radius: 10px;
+}
+
+.disweb-wrapper .section-piedras {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100%;
+  height: 100px;
+  margin-bottom: -5px;
 }
 
 .disweb-wrapper .section-piedras-reverse {
@@ -1280,6 +1341,16 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
 .disweb-planes-wrapper .disweb-planes .card a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.disweb-planes-wrapper .disweb-planes .card .card-content {
+  text-align: left;
+}
+
+.disweb-planes-wrapper .disweb-planes .card .card-content p {
+  font-size: 1em;
+  color: #f7ddb6;
+  margin: 5px 0;
 }
 
 footer {

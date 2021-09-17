@@ -42,8 +42,10 @@ class servidor
         $stmts->bind_param("ssssss", $titulo, $subtitulo, $contenido, $imagen, $autor, $fecha);
         if($stmts->execute()){
             $execute = true;            
+        }else{
+            $execute = $stmts->error;
         }
-        return $execute;
+        return $stmts->error;
     }
 
 
