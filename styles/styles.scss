@@ -665,9 +665,7 @@ header {
           color: $color1;
           margin: 5px 20px;
         }
-        .desc {
-          color: $color2;
-        }
+        
       }
     }
     .card-anim-wrapper:hover .card {
@@ -1412,6 +1410,14 @@ footer {
         width: 90%;
         border: 1px solid $color1;
       }
+      .post-desc{
+        color: $color2;
+        font-weight: normal !important;
+
+        .desc {
+          color: $color2;
+        }
+      }
       p {
         margin: 10px 0;
         font-weight: 500;
@@ -1597,7 +1603,7 @@ footer {
     z-index: -1;
   }
 
-  form{
+  form, .form{
     width: 100%;
     padding: 20px;
     max-width: 500px;
@@ -1609,6 +1615,13 @@ footer {
     flex-direction: column;
 
     margin: 20px;
+
+    form{
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
 
     img{
       width: 100%;

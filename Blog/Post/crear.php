@@ -5,7 +5,6 @@
 
     $Titulo = $_POST['titulo'];
     $Subtitulo = $_POST['subtitulo'];
-    $Contenido = htmlentities($_POST['editor1']);
     $Autor = $_POST['Autor'];
     $Fecha = $_POST['Fecha'];
 

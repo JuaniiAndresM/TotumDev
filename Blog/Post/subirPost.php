@@ -1,17 +1,41 @@
 <?php
 include '../../Servidor/servidor.php';
-$server= new servidor();
+$server = new servidor();
 
-$Titulo = $_POST['Titulo'];
-$Subtitulo = $_POST['Subtitulo'];
-$Contenido = $_POST['Contenido'];
-$Imagen = $_POST['Imagen'];
-$Autor = $_POST['Autor'];
-$Fecha = $_POST['Fecha'];
+if(isset($_POST['Titulo'], $_POST['Subtitulo'], $_POST['Contenido'], $_POST['Autor'], $_POST['Fecha'])){
 
-$post = $server->CrearPost($Titulo, $Subtitulo, $Contenido, $Imagen, $Autor, $Fecha);
+    $Titulo = $_POST['Titulo'];
+    echo $Titulo;
 
-echo $post;
+    $Subtitulo = $_POST['Subtitulo'];
+    $Contenido = $_POST['Contenido'];
+    $Autor = $_POST['Autor'];
+    $Fecha = $_POST['Fecha'];
+
+}
+
+if(isset($_FILES['file']['name'])){
+
+    $Imagen = 'https://www.totumdev.uy/Blog/Post/uploads/' . $_FILES['file']['name'];
+
+    if ( $_FILES['file']['error'] > 0 ){
+        echo 'Error: ' . $_FILES['file']['error'] . '<br>';
+    }
+    else {
+        if(move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']))
+        {
+            $funciona = true;
+        }
+    }
+}else{
+    echo "No Funca che.";
+}
+
+if($funciona == true){
+    $post = $server->CrearPost($Titulo, $Subtitulo, $Contenido, $Imagen, $Autor, $Fecha);
+
+    echo "Post: " . $post;
+}
 return $post;
 
 ?>

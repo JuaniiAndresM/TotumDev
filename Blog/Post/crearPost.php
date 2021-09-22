@@ -36,7 +36,7 @@
         alt=""
       />
 
-      <form action="crear.php" enctype="multipart/form-data" method="POST">
+      <div class="form">
       
         <img src="/media/svg/LogoHorizontal.svg" />
 
@@ -59,10 +59,11 @@
             id="subtitulo"
             required
           />
-
-          <input name="uploadedfile" type="file" />
+          
+          <input name="uploadedfile" type="file" id="pic" /> 
 
           <label for="Contenido">Contenido:</label>
+          
           <textarea
             placeholder="Contenido del Post"
             name="Contenido"
@@ -102,15 +103,15 @@
 
         <p class="mensaje"></p>
 
-        <input type="submit" value="Enviar" />
-      </form>
+        <button onclick="subir()" id="upload"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </div>
     </div>
 
     <div id="footer"></div>
 
     <script src="ckeditor/ckeditor.js"></script>
     <script>
-      CKEDITOR.replace('Contenido');
+      CKEDITOR.replace('contenido');
     </script>
   </body>
 </html>

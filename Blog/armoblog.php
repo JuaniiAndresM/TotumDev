@@ -19,17 +19,19 @@ for($x = 0; $x < $postlength; $x++){
 
                             <h1>'.$post[$x]["titulo"].'</h1>
                             <hr>
-                            <p class="desc">';
+                            <div class="post-desc">
+                                <p class="desc">';
 
-                            if (strlen($str) > 100){
-                                $str = substr($str, 0, 97) . '...';
+                                if (strlen($str) > 100){
+                                    $str = substr($str, 0, 97) . '...';
 
-                                $plantillaPost .= $str;
-                            }else{
-                                $plantillaPost .= $post[$x]["contenido"];
-                            }
+                                    $plantillaPost .= $str;
+                                }else{
+                                    $plantillaPost .= $post[$x]["contenido"];
+                                }
 
-                            $plantillaPost .= '  </p>
+                                $plantillaPost .= '  </p>
+                            </div>
 
                             <button onclick="post('.$post[$x]["id"].')">Ver más <i class="fas fa-angle-double-right"></i></button>
                         </div>';

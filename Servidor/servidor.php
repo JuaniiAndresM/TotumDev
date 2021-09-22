@@ -45,7 +45,7 @@ class servidor
         }else{
             $execute = $stmts->error;
         }
-        return $stmts->error;
+        return $execute;
     }
 
 

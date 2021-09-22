@@ -844,10 +844,6 @@ header .header-wrapper .header-derecha #links-mobile .links-wrapper a:hover {
   margin: 5px 20px;
 }
 
-.section-nosotros .card-wrapper .card-anim-wrapper .card .desc {
-  color: #f7ac6a;
-}
-
 .section-nosotros .card-wrapper .card-anim-wrapper:hover .card {
   -webkit-animation: flip 0.5s linear forwards;
           animation: flip 0.5s linear forwards;
@@ -1850,6 +1846,15 @@ footer .footer-right .redes-wrapper a:hover {
   border: 1px solid #f7ddb6;
 }
 
+.blog-wrapper2 .post-wrapper .post .post-desc {
+  color: #f7ac6a;
+  font-weight: normal !important;
+}
+
+.blog-wrapper2 .post-wrapper .post .post-desc .desc {
+  color: #f7ac6a;
+}
+
 .blog-wrapper2 .post-wrapper .post p {
   margin: 10px 0;
   font-weight: 500;
@@ -2070,7 +2075,7 @@ footer .footer-right .redes-wrapper a:hover {
   z-index: -1;
 }
 
-.plan-wrapper-form form {
+.plan-wrapper-form form, .plan-wrapper-form .form {
   width: 100%;
   padding: 20px;
   max-width: 500px;
@@ -2089,17 +2094,24 @@ footer .footer-right .redes-wrapper a:hover {
   margin: 20px;
 }
 
-.plan-wrapper-form form img {
+.plan-wrapper-form form form, .plan-wrapper-form .form form {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-wrapper-form form img, .plan-wrapper-form .form img {
   width: 100%;
   max-width: 300px;
   margin: 10px auto;
 }
 
-.plan-wrapper-form form h1 {
+.plan-wrapper-form form h1, .plan-wrapper-form .form h1 {
   color: white;
 }
 
-.plan-wrapper-form form .input-wrapper {
+.plan-wrapper-form form .input-wrapper, .plan-wrapper-form .form .input-wrapper {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2114,7 +2126,7 @@ footer .footer-right .redes-wrapper a:hover {
   color: white;
 }
 
-.plan-wrapper-form form .input-wrapper input, .plan-wrapper-form form .input-wrapper textarea {
+.plan-wrapper-form form .input-wrapper input, .plan-wrapper-form form .input-wrapper textarea, .plan-wrapper-form .form .input-wrapper input, .plan-wrapper-form .form .input-wrapper textarea {
   width: 100%;
   height: 40px;
   border: 1px solid white;
@@ -2127,33 +2139,33 @@ footer .footer-right .redes-wrapper a:hover {
   resize: vertical;
 }
 
-.plan-wrapper-form form .input-wrapper input::-webkit-input-placeholder {
+.plan-wrapper-form form .input-wrapper input::-webkit-input-placeholder, .plan-wrapper-form .form .input-wrapper input::-webkit-input-placeholder {
   color: #666;
 }
 
-.plan-wrapper-form form .input-wrapper input:-ms-input-placeholder {
+.plan-wrapper-form form .input-wrapper input:-ms-input-placeholder, .plan-wrapper-form .form .input-wrapper input:-ms-input-placeholder {
   color: #666;
 }
 
-.plan-wrapper-form form .input-wrapper input::-ms-input-placeholder {
+.plan-wrapper-form form .input-wrapper input::-ms-input-placeholder, .plan-wrapper-form .form .input-wrapper input::-ms-input-placeholder {
   color: #666;
 }
 
-.plan-wrapper-form form .input-wrapper input::placeholder {
+.plan-wrapper-form form .input-wrapper input::placeholder, .plan-wrapper-form .form .input-wrapper input::placeholder {
   color: #666;
 }
 
-.plan-wrapper-form form .input-wrapper input[name="Plan"] {
+.plan-wrapper-form form .input-wrapper input[name="Plan"], .plan-wrapper-form .form .input-wrapper input[name="Plan"] {
   color: #702c2e;
   font-weight: 500;
   font-size: 18px;
 }
 
-.plan-wrapper-form form .input-wrapper textarea {
+.plan-wrapper-form form .input-wrapper textarea, .plan-wrapper-form .form .input-wrapper textarea {
   height: 100px;
 }
 
-.plan-wrapper-form form .loader {
+.plan-wrapper-form form .loader, .plan-wrapper-form .form .loader {
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2165,14 +2177,14 @@ footer .footer-right .redes-wrapper a:hover {
   margin: 5px;
 }
 
-.plan-wrapper-form form .loader i {
+.plan-wrapper-form form .loader i, .plan-wrapper-form .form .loader i {
   color: #f7ac6a;
   font-size: 2em;
   -webkit-animation: 1s spinner linear infinite;
           animation: 1s spinner linear infinite;
 }
 
-.plan-wrapper-form form input[type="submit"] {
+.plan-wrapper-form form input[type="submit"], .plan-wrapper-form .form input[type="submit"] {
   width: 100%;
   height: 40px;
   background-color: #f7ac6a;
