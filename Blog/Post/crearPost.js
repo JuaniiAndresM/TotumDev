@@ -32,7 +32,7 @@ function subir(){
 
     let titulo = document.getElementById('titulo').value;
     let subtitulo = document.getElementById('subtitulo').value;
-    let contenido = CKEDITOR.instances.contenido.getData();;
+    let contenido = CKEDITOR.instances.contenido.getData();
     let autor = document.getElementById('autor').value;
     let fecha = document.getElementById('fecha').value;
 
